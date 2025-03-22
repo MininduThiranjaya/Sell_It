@@ -1,12 +1,19 @@
-import { View, StyleSheet, Text } from 'react-native';
+import { View, StyleSheet } from 'react-native';
+import { PaperProvider, Text } from 'react-native-paper';
+import { SafeAreaProvider } from 'react-native-safe-area-context';
+import { NavigationContainer } from '@react-navigation/native';
+import AllRoutes from '../AllRoutes';
+import Login from './Login';
 
 export default function HomeScreen() {
 
-    return (
-      <View>
-        <Text> WelCome </Text>
-      </View>
-    );
+  return (
+    <PaperProvider>
+      <SafeAreaProvider>
+        <Login />
+      </SafeAreaProvider>
+    </PaperProvider>
+  );
 }
 
 const styles = StyleSheet.create({
