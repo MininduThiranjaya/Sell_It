@@ -1,17 +1,14 @@
-import { View, StyleSheet } from 'react-native';
+import { View, StyleSheet, Button } from 'react-native';
 import { PaperProvider, Text } from 'react-native-paper';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
+
 
 export default function Login() {
 
     return (
-        <PaperProvider>
-            <SafeAreaProvider>
-                <View>
-                    <Text> Login </Text>
-                </View>
-            </SafeAreaProvider>
-        </PaperProvider>
+        <View>
+            <Text>Login</Text>
+        </View>
     );
 }
 
